@@ -2,99 +2,122 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>الأسئلة الشائعة - خدمات العمالة المساعدة</title>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "ما هي أنواع العمالة المتوفرة لديكم؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نوفر عمالة مساعدة في مجالات متعددة مثل النظافة، رعاية كبار السن، التمريض المنزلي، ورعاية الأطفال."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل العمالة مقيمة أم بالساعة؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نوفر كلا الخيارين: عمالة مقيمة وعمالة بالساعة حسب احتياجات العميل."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل يمكن اختيار جنسية العمالة؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، نتيح للعميل اختيار جنسية العامل أو العاملة حسب التوفر."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل تقدمون تدريبًا للعاملات؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، جميع العاملات يتم تدريبهن على المهام المنزلية والتعامل مع الأطفال وكبار السن."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "ما هي طرق الدفع المتاحة؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نوفر طرق دفع مرنة تشمل التحويل البنكي، الدفع النقدي، وخيارات إلكترونية أخرى."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل تقدمون ضمان أو استبدال في حالة عدم الرضا؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، لدينا سياسة استبدال خلال فترة محددة إذا لم تكن الخدمة بالمستوى المطلوب."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "كم مدة استقدام العمالة المقيمة؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "بالتأكيد لدينا العاملات داخل الدولة وايضا طلبات من خارج الدولى مدة الاستقدام اسبوع."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل يمكن طلب عاملة بشكل عاجل؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، لدينا خدمة طلبات عاجلة يتم تنفيذها خلال 24 ساعة حسب التوفر."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "كيف يمكنني تقديم طلب؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "يمكنك الاتصال بنا مباشرة أو تعبئة نموذج الطلب على موقعنا."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "ما هي وسائل التواصل معكم؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "للتواصل معنا يمكنك الاتصال على الرقم: 0528807702"
-        }
-      }
-    ]
-  }
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الأسئلة الشائعة - شركة إنجاز عليا</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      padding-right: 25px;
+    }
+    .faq-question::before {
+      content: '+';
+      position: absolute;
+      right: 0;
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      color: #666;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .faq-item.active .faq-question::before {
+      content: '-';
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
 <body>
-  <h1 style="text-align: center;">الأسئلة الشائعة - خدمات العمالة المساعدة</h1>
-  <p style="text-align: center;">هذه الصفحة تحتوي على معلومات مهيئة لمحركات البحث لتسهيل عرض محتوى الأسئلة الشائعة.</p>
-  <p style="text-align: center;">للتواصل معنا: <strong>0528807702</strong></p>
+
+<div class="faq-container">
+  <h1 style="text-align:center; margin-bottom: 30px;">الأسئلة الشائعة</h1>
+
+  <div class="faq-item">
+    <div class="faq-question">ما هي الخدمات التي تقدمها شركة إنجاز عليا؟</div>
+    <div class="faq-answer">نقدم خدمات العمالة المنزلية، رعاية الأطفال، رعاية المسنين، ومقدمي الرعاية الصحية المنزلية.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">هل العمالة لديكم مدربة ومؤهلة؟</div>
+    <div class="faq-answer">نعم، جميع العاملين لدينا مدربون تدريبًا متخصصًا ويتم اختيارهم بعناية لضمان تقديم أفضل مستوى من الخدمة.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">هل توفرون ضمانات على العمالة المنزلية؟</div>
+    <div class="faq-answer">بالتأكيد، نقدم ضمان لمدة تصل إلى عامين وفقًا لشروط وزارة العمل والموارد البشرية.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">هل تقدمون خدمات استبدال العامل في حالة عدم الرضا؟</div>
+    <div class="faq-answer">نعم، نتيح إمكانية استبدال العامل خلال فترة الضمان لضمان رضا عملائنا الكامل.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">ما الجنسيات المتوفرة لديكم؟</div>
+    <div class="faq-answer">نوفر عمالة منزلية من الفلبين، وإفريقيا، وآسيا، وجنسيات أخرى حسب طلب العميل.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">كيف يمكنني التعاقد مع شركة إنجاز عليا؟</div>
+    <div class="faq-answer">يمكنك التواصل معنا عبر الموقع الإلكتروني أو الهاتف لإتمام إجراءات التعاقد بكل سهولة ويسر.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">هل العمالة تحمل إقامة وتصاريح عمل قانونية؟</div>
+    <div class="faq-answer">نعم، جميع العاملين لدينا لديهم إقامة سارية وتصاريح عمل رسمية وفق القوانين المحلية.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">هل يوجد خدمات تجريبية قبل التعاقد النهائي؟</div>
+    <div class="faq-answer">نعم، يمكننا تقديم فترة تجريبية قصيرة للتأكد من ملائمة العامل لمتطلبات الأسرة.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">ما هي طرق الدفع المتاحة؟</div>
+    <div class="faq-answer">نوفر عدة خيارات للدفع تشمل الدفع النقدي، التحويل البنكي، والدفع الإلكتروني.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">كيف يمكنني التواصل مع خدمة العملاء؟</div>
+    <div class="faq-answer">يمكنك التواصل مع خدمة العملاء عبر الهاتف، البريد الإلكتروني، أو عبر النموذج الموجود على موقعنا الإلكتروني.</div>
+  </div>
+
+</div>
+
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
 </body>
 </html>
